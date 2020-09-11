@@ -2,6 +2,7 @@ import React from 'react';
 import { Column } from './Column';
 import { Card } from './Card';
 import { AppContainer } from './styles';
+import { AddNewItem } from './AddNewItem';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Column text="In-Progress">
         <Card text="something here" />
       </Column>
+      <AddNewItem toggleButtonText="+ Add a new item" onAdd={console.log} />
     </AppContainer>
   );
 }
